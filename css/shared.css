@@ -1,0 +1,231 @@
+/* SIZING*/
+/* SPACING */
+/* COLORS */
+/* OVERRIDING DEFAULT */
+* {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #f4f4f4;
+}
+
+/* TYPOGRAPHY */
+.caption {
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Cairo", sans-serif;
+  font-size: 3rem;
+}
+
+.paragraph {
+  display: inline-block;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+/* NAVIGATIONS */
+.nav-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .nav-btn {
+  padding: 1rem 1.5rem;
+}
+
+.link {
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link a {
+  display: inline-block;
+}
+
+.link:hover a {
+  color: #c0b283;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 0.3em;
+  padding: 0.25em 1.25em;
+}
+
+.border-btn {
+  border: 1px solid #c0b283;
+  color: #c0b283;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.border-btn:hover {
+  background-color: #c0b283;
+  color: white;
+}
+
+/* SPECIAL ELEMENTS */
+.hero {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-origin: center;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero .overlay {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 4rem;
+  width: 50%;
+  height: auto;
+  letter-spacing: 2px;
+}
+
+.hero .content:hover {
+  cursor: pointer;
+}
+
+.icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+}
+
+.icon img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  width: 70%;
+  height: 70%;
+}
+
+/* CONTENT GROUPS*/
+.section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 8rem;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #f4f4f4;
+}
+
+.section .thumbnail {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  position: relative;
+  margin-right: 4rem;
+  width: 40%;
+  min-height: 50%;
+  height: auto;
+}
+
+.section .thumbnail img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.section .content {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 4rem;
+}
+
+.section .content * {
+  color: #373737;
+}
+
+/* ANIMATIONS AND EFFECTS */
+.scroll-reveal {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-pop {
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("../resources/fonts/Cairo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../resources/fonts/OpenSans-Regular.ttf");
+}
+/*# sourceMappingURL=shared.css.map */

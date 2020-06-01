@@ -1,0 +1,58 @@
+/* SIZING*/
+/* SPACING */
+/* COLORS */
+.header {
+  position: absolute;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 4rem;
+  width: 100%;
+  height: auto;
+}
+
+.header .logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .header-nav .nav-btn {
+  font-weight: bold;
+}
+
+.header .header-nav .nav-btn a {
+  -webkit-transform: scaleY(0.9);
+          transform: scaleY(0.9);
+}
+
+.header .contact-btn a {
+  -webkit-transform: scaleY(0.9);
+          transform: scaleY(0.9);
+}
+
+.hero-block {
+  background-image: url("../resources/images/hero-img.jpg");
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-block .content .hero-btn {
+  border-width: 2px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=header.css.map */

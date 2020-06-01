@@ -1,0 +1,71 @@
+@import 'variables';
+
+
+.skills-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: $padding-container-y * 2.5;
+    padding-left: $padding-container-x / 2;
+    padding-right: $padding-container-x / 2;
+
+    background-color: $color-charcoal;
+    
+    .caption {
+        display: inline-block;
+
+        padding-bottom: $padding-container-y;
+
+        text-align: center;
+    }
+
+    .skills-content {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: auto;
+
+        .skill {
+            flex: 1;
+            
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            padding: $padding-base-y $padding-base-x;
+            height: auto;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            h3 {
+                display: block;
+
+                padding: $padding-base-y 0;
+
+                font-size: 1.2rem;
+                text-align: center;
+                font-weight: bold;
+                color: $color-pale-gold;
+            }
+
+            p {
+                display: block;
+
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}

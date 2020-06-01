@@ -1,0 +1,62 @@
+@import 'variables';
+
+.header {
+    position: absolute;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: $padding-base-y $padding-container-x;
+    width: 100%;
+    height: auto;
+
+    .logo {
+        position: relative;
+
+        width: 50px;
+        height: 50px;
+
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header-nav {
+        .nav-btn {
+            font-weight: bold;
+
+            a {
+                transform: scaleY(0.9);
+            }
+        }
+    }
+
+    .contact-btn {
+        a {
+            transform: scaleY(0.9);
+        }
+    }
+}
+
+.hero-block {
+    background-image: url("../resources/images/hero-img.jpg");
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    .content {
+
+        .hero-btn {
+            border-width: 2px;
+
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+}
